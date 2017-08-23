@@ -1,0 +1,71 @@
+{
+    "maps": {
+        "1": {
+            "id": 1,
+            "name": "5 vs 5",
+            "units": [
+                { "position": 0, "team": 0, "x": -0.5, "y": 0 },
+                { "position": 1, "team": 0, "x": 0, "y": 2 },
+                { "position": 2, "team": 0, "x": 0, "y": 4 },
+                { "position": 3, "team": 0, "x": 0, "y": 6 },
+                { "position": 4, "team": 0, "x": -0.5, "y": 8 },
+                { "position": 5, "team": 1, "x": 15.5, "y": 0 },
+                { "position": 6, "team": 1, "x": 15, "y": 2 },
+                { "position": 7, "team": 1, "x": 15, "y": 4 },
+                { "position": 8, "team": 1, "x": 15, "y": 6 },
+                { "position": 9, "team": 1, "x": 15.5, "y": 8 }
+            ]
+        },
+        "2": {
+            "id": 2,
+            "name": "One Vs One",
+            "units": [
+                { "position": 0, "team": 0, "x": 0, "y": 0 },
+                { "position": 1, "team": 1, "x": 2.5, "y": 0 }
+            ]
+        },
+        "3": {
+            "id": 3,
+            "name": "4 vs 4",
+            "units": [
+                { "position": 0, "team": 0, "x": 0, "y": 0 },
+                { "position": 1, "team": 0, "x": 0, "y": 2 },
+                { "position": 2, "team": 0, "x": 0, "y": 4 },
+                { "position": 3, "team": 0, "x": 0, "y": 6 },
+                { "position": 4, "team": 1, "x": 15, "y": 0 },
+                { "position": 5, "team": 1, "x": 15, "y": 2 },
+                { "position": 6, "team": 1, "x": 15, "y": 4 },
+                { "position": 7, "team": 1, "x": 15, "y": 6 }
+            ]
+        },
+        "4": {
+            "id": 4,
+            "name": "Circle Of Death",
+            "units": [
+                { "position": 0, "team": 1, "x": 3, "y": 0 },
+                { "position": 1, "team": 1, "x": 5, "y": 0 },
+                { "position": 2, "team": 1, "x": 4, "y": 1 },
+
+                { "position": 3, "team": 1, "x": 3, "y": 12 },
+                { "position": 4, "team": 1, "x": 5, "y": 12 },
+                { "position": 5, "team": 1, "x": 4, "y": 11 },
+
+                { "position": 6, "team": 1, "x": 16, "y": 5 },
+                { "position": 7, "team": 1, "x": 16, "y": 7 },
+                { "position": 8, "team": 1, "x": 15, "y": 6 },
+
+                { "position": 9, "team": 0, "x": 13, "y": 0 },
+                { "position": 10, "team": 0, "x": 11, "y": 0 },
+                { "position": 11, "team": 0, "x": 12, "y": 1 },
+
+                { "position": 12, "team": 0, "x": 13, "y": 12 },
+                { "position": 13, "team": 0, "x": 11, "y": 12 },
+                { "position": 14, "team": 0, "x": 12, "y": 11 },
+
+                { "position": 15, "team": 0, "x": 0, "y": 5 },
+                { "position": 16, "team": 0, "x": 0, "y": 7 },
+                { "position": 17, "team": 0, "x": 1, "y": 6 }
+            ]
+        }
+    }
+}

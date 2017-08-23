@@ -1,0 +1,441 @@
+p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ReactModal__Overlay {
+    z-index: 999999999999999999;
+}
+
+.ReactModal__Content--after-open {
+    bottom: initial!important;
+}
+
+html, body { 
+    user-select: none;
+}
+
+.rc-slider {
+    width: 90%!important;
+}
+
+.rc-slider-rail {
+    background-color: #444444!important;
+    height: 40px!important;
+
+}
+
+.rc-slider-track {
+    height: 40px!important;
+    background-color: white!important
+}
+
+.Red .rc-slider-track {
+    background-color: rgb(255, 85, 85)!important;
+}
+.Blue .rc-slider-track {
+    background-color: rgb(136, 136, 255)!important;
+
+}
+
+.rc-slider-handle {
+     margin-left: 0px!important; 
+     margin-top: 0px!important;  
+    width: 40px!important;
+    height: 40px!important;
+}
+
+
+label.unitType {
+    border-width: 2px;
+    border-style: solid;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 15px;
+    border-color: black;
+    color: black;
+    background-color: #EEEEEE;
+}
+
+label.selected { 
+    border-color: white;
+    border-style: dashed;
+    color: white;
+    background-color: black;
+}
+
+label.teamSelect {
+    border-width: 2px;
+    border-style: solid;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: white;
+    border-color: black;
+    margin-top: 20px;
+}
+
+label.selectedTeam { 
+    border-color: white;
+    border-style: dashed;
+}
+
+select.ai-select {
+    font-size: 12pt;
+    margin-top: 20px;
+}
+
+span.coordinate {
+}
+.progress {
+    transform: rotate(-90deg);
+    height: 12px;
+    width: 12px;
+}
+
+.unit-body-wrap { 
+    /* padding-right: 15px; */
+}
+
+.canvas {
+    z-index: 500;
+    pointer-events:none;
+    position: absolute;
+}
+.linesCanvas {
+    top: 0px;
+    left: 0px;
+    z-index: 400;
+    pointer-events:none;
+    position: absolute;
+}
+.bulletCanvas {
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    pointer-events:none;
+    position: absolute;
+}
+.shootingLevelCanvas {
+    top: 0px;
+    left: 0px;
+    z-index: 999999;
+    pointer-events:none;
+    position: absolute;
+}
+
+.linesSvg {
+    z-index: 10000;
+    position: absolute;
+    pointer-events:none;
+}
+
+.editUnitForm {
+    z-index: 999999;
+    position: absolute;
+    top: 0px;
+    color: white;
+    width: 350px;
+    background-color: black;
+    padding: 20px;
+    padding-top: 0px;
+    opacity: 0.9;
+}
+
+.editUnitForm.left_side {
+    left: 0px;
+}
+.editUnitForm.right_side {
+    right: 0px;
+}
+
+.topMenu {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.scenarioChooser {
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    width: 200px;
+    background-color: black;
+    padding: 10px;
+    opacity: 0.8;
+}
+
+.scenarioChooser ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.scenarioChooser li {
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.scenarioChooser li.selected {
+    background-color: white;
+    color: black;
+}
+
+.fps {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+.timeElapsed {
+    position: absolute;
+    padding: 10px;
+    width: 100px;
+    top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0px;
+    right: 0px;
+    font-size: 24pt;
+    color: white;
+    z-index: 999999;
+}
+
+.circularBarContainer{ 
+    padding-left: 5px;
+    width: 12px;
+    height: 12px;
+    margin-top: -3px;
+}
+
+.progress__value {
+    /* stroke-dasharray: 339.292;
+    stroke-dashoffset: 339.292; */
+    fill: none;
+    stroke: orange;
+    stroke-width: 2;
+}
+
+.progress__back {
+    fill: none;
+    stroke: #444444;
+    stroke-width: 2;
+}
+
+.unitStatus {
+    display:flex;
+    margin-bottom: 5px;
+    min-width: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: #222222;
+  /** background-image:linear-gradient(#383838, #0e0e0e); **/
+}
+
+
+.board {
+    position: relative;
+    margin: 0 auto;
+    transition: transform 1s ease 0s;
+}
+
+.board {
+    height:100%;
+    background-size:80px 80px;
+    background-color: transparent;
+    background-image:       linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .2) 25%, rgba(255, 255, 255, .2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .2) 75%, rgba(255, 255, 255, .2) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .2) 25%, rgba(255, 255, 255, .2) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .2) 75%, rgba(255, 255, 255, .2) 76%, transparent 77%, transparent);       
+}
+
+.unit {
+    user-select: none;
+    will-change: transform;
+    display: inline-block;
+    position: absolute;
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100000;
+}
+
+.item {
+    display: inline-block;
+    position: absolute;
+}
+
+
+.bullet {
+    display: inline-block;
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    background-color: white;
+}
+
+.bar {
+    min-height: 4px;
+    background-color: #555555;
+    margin: 0 auto;
+    margin-bottom: 1px;
+}
+
+.bar .level {
+    min-height: 4px;
+    transform-origin: 0px;
+}
+
+div.unit-body {
+    border-radius: 5px; 
+    background-color: black;
+    padding: 4px;
+    font-size: 14pt;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    /* transition: transform 0.1s ease 0s; */
+}
+
+div.unit-red {
+    color: #FF8888;
+    color:white; 
+     border: 2px solid #FF8888; 
+}
+
+.unit-blue {
+    color: #8888FF;
+    color:white; 
+    border: 2px solid #8888FF; 
+}
+
+
+.line {
+    stroke-width: 2;
+    stroke-dasharray: 2, 6;
+    opacity: 0.7;
+    /* will-change: transform; */
+}
+
+.line.selected {
+    stroke-width: 10;
+    stroke-dasharray: 10, 4;
+    opacity: 0.4;
+}
+
+.line.unit-red {
+    stroke: #FF8888;
+}
+
+.line.unit-blue {
+    stroke: #8888FF;
+}
+
+.time {
+    padding: 10px;
+    color: white;
+}
+
+.description {
+    color: white;
+}
+
+.controls {
+    padding-bottom: 10px;
+    font-size: 18pt;
+    z-index: 1000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    width: 62vw;
+}
+
+.controls button, .topMenu button {
+    opacity: 0.6;
+    color: white;
+    border: 1px solid #888888;
+    padding: 10px;
+    font-size: 16pt;
+    margin-right: 10px;
+    text-decoration: none;
+    background: #888888;
+    margin-right: 20px;
+    width: 6vw;
+    min-width: 60px;
+}
+.topMenu button {
+    width: inherit;
+}
+.controls button:hover {
+    border: 1px solid white;
+    opacity: 1;
+}
+
+.controls span {
+    font-size: 10pt;
+    color: white;
+}
+
+.circle {
+    z-index: -9999;
+    pointer-events:none;
+}
+
+.distanceCircle {
+    stroke-width: 2px;
+    stroke-dasharray: 2, 6;
+    stroke: white;
+    z-index: -9999;
+    /* fill: #1A1A1A; */
+    fill: rgba(0,0,0,0);
+    pointer-events:none;
+/* fill={{ color: 'rgba(200,200,200,0.05)' }}
+stroke={{ color: 'rgba(0,0,0,0.1)' }}
+strokeWidth={1} /> */
+}
+
+.distanceCircle.small {
+}
+.distanceCircle.medium {
+    z-index: -9999;
+}
+.distanceCircle.large {
+     fill: #1A1A1A; 
+    opacity: 0.4;
+}
+.unit-body.short {
+     background-color: #6c1717!important; 
+}
+.unit-body.medium {
+     background-color: #12424d!important; 
+}
+.unit-body.long {
+    background-color: #173f17!important;
+}
