@@ -75,9 +75,8 @@ class App extends Component {
 
     selectMap = (map: Object) => {
         window.location.hash = "#" + map.id
-        this.currentMap = map
-        let config = createConfig(this.currentMap)
-        this.game = new Game(config)
+        this.currentMap = map        
+        this.createNewGame()
     }
 
     createNewGame = () => {
