@@ -191,14 +191,14 @@ class App extends Component {
     // Resize the board when the screen is resized (mobile changed from portrait to landscape)
     componentDidMount() {
         this.updateWindowDimensions();
-        window.addEventListener('resize', () => this.updateWindowDimensions());
+        window.addEventListener('resize', this.updateWindowDimensions);
     }
 
     componentWillUnmount() {
-        window.removeEventListener('resize', () => this.updateWindowDimensions());
+        window.removeEventListener('resize', this.updateWindowDimensions);
     }
 
-    updateWindowDimensions() {
+    updateWindowDimensions = () => {
         if (this.game) {
             this.game.board.width = window.innerWidth
             this.game.board.height = window.innerHeight
