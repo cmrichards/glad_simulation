@@ -1,6 +1,6 @@
 This is a simulation of the excellent Android/PC game Gladiabots.  It's the only game I play on my phone :-)  
 
-I created this for the purpose of helping me test retreatment scenarios and help me built better AIs within the game and also it's given me a chance to play with React + Mobx.
+I created this for the purpose of helping me test retreatment scenarios and help me build better AIs within the game and also it's given me a chance to play with React + Mobx.
 
 "Gladiabots is a tactical game in which you create the AI of your robots. 
 Craft your battle squad behavior carefully before sending it in this online competition for the title."
